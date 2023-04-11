@@ -1,0 +1,55 @@
+.sensor.table{
+    display: flex;
+    padding-top: 50px;
+}
+
+.sensor_table_row{
+    padding-right: 60px;
+}
+
+button{
+    margin-left: 20px;
+}
+
+#agvMode, #time, #voltage, #Battery {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+@-webkit-keyframes blinkerReady {
+    from {
+      fill: #9cff3f;
+    }
+
+    to {
+      fill: #7a8da3;
+    }
+  }
+
+  .blinkingReady {
+    text-decoration: blink;
+    -webkit-animation-name: blinkerReady;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+  }
+
+  @-webkit-keyframes blinkerLoaded {
+    from {
+      fill: #ffa600;
+    }
+
+    to {
+      fill: #3d3d3c;
+    }
+  }
+
+  .blinkingLightsLoaded {
+    text-decoration: blink;
+    -webkit-animation-name: blinkerLoaded;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+  }

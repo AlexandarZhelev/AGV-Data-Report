@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        AGV Data Report
+    </title>
+
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+
+<body>
+    <div class="content">
+        <h1>
+            AGV Parameters Example
+            <button onclick="changeSVGTexts()">Get Values From The AGV Sensors</button>
+        </h1>
+    </hr>
+
+    <div class="sensor table">
+        <div class="sensor_table_row">
+            <div class="sensor_table_cell">Ready:</div>
+            <div class="sensor_table_cell sensor_input"><input id="readyCbx" type="checkbox"></input></div>
+            <div class="sensor_table_cell">Battery Level:</div>
+            <div class="sensor_table_cell sensor_input"><input id="Battery" type="text"></input></div>
+            <div class="sensor_table_cell">Current Speed:</div>
+            <div class="sensor_table_cell sensor_input"><input id="CurrentSpeed" type="text"></div>
+          </div>
+          <div class="sensor_table_row">
+            <div class="sensor_table_cell">Operational Time (sec):</div>
+            <div class="sensor_table_cell sensor_input"><input id="time" type="text"></div>
+            <div class="sensor_table_cell">Battery Voltage:</div>
+            <div class="sensor_table_cell sensor_input"><input id="voltage" type="text"></div>
+            <div class="sensor_table_cell">Current Location:</div>
+            <div class="sensor_table_cell sensor_input"><select name="location" id="currentLocation" disabled>
+                                                            <option value="Paint shop" id="paintShop">Paint shop</option>
+                                                            <option value="Body shop" id="bodyShop">Body shop</option>
+                                                            <option value="Engine instalation" id="engineInstall">Engine instalation</option>
+                                                            <option value="Water test" id="waterTest">Water test</option>
+            </select></div>
+          </div>
+          <div class="sensor_table_row">
+            <div class="sensor_table_cell">Mode:</div>
+            <div class="sensor_table_cell sensor_input"><select name="Mode" id="agvMode">
+                                                            <option value="Automatic" id="auto">Automatic</option>
+                                                            <option value="Manual" id="manual">Manual</option>
+                                                            <option value="Charging" id="charge">Charging</option>
+                                                            <option value="Disable" id="disable">Disable</option>
+                                                            <option value="Reserved" id="reserved">Reserved</option>
+                                                            <option value="Error" id="error">Error</option>
+            </select></div>
+              <div class="sensor_table_cell">Loaded:</div>
+              <div class="sensor_table_cell sensor_input"><input id="blinkerCheckbox" type="checkbox"></input></div>
+          </div>
+    </div>
+        <div>
+            <svg
+                width="210mm"
+                height="297mm"
+                viewBox="0 0 210 297"
+                version="1.1"
+                id="svg26668"
+                inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+                sodipodi:docname="AGV.svg"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <sodipodi:namedview
+                    id="namedview26670"
+                    pagecolor="#ffffff"
+                    bordercolor="#000000"
+                    borderopacity="0.25"
+                    inkscape:showpageshadow="2"
+                    inkscape:pageopacity="0.0"
+                    inkscape:pagecheckerboard="0"
+                    inkscape:deskcolor="#d1d1d1"
+                    inkscape:document-units="mm"
+                    showgrid="false"
+                    inkscape:zoom="1.1893044"
+                    inkscape:cx="224.08056"
+                    inkscape:cy="306.90208"
+                    inkscape:window-width="1920"
+                    inkscape:window-height="1129"
+                    inkscape:window-x="-8"
+                    inkscape:window-y="-8"
+                    inkscape:window-maximized="1"
+                    inkscape:current-layer="layer1" />
+                <defs
+                    id="defs26665">
+                    <rect
+                    x="571.76279"
+                    y="484.31671"
+                    width="201.79863"
+                    height="21.861518"
+                    id="rect1148" />
+                    <rect
+                    x="487.53504"
+                    y="104.64167"
+                    width="200.95956"
+                    height="52.320833"
+                    id="rect27096" />
+                    <rect
+                    x="61.380417"
+                    y="433.86706"
+                    width="165.64304"
+                    height="42.041382"
+                    id="rect26104" />
+                    <rect
+                    x="34.484186"
+                    y="76.697585"
+                    width="123.07287"
+                    height="50.537169"
+                    id="rect25536" />
+                    <rect
+                    x="48.753504"
+                    y="93.939678"
+                    width="130.80208"
+                    height="35.673295"
+                    id="rect25378" />
+                    <rect
+                    x="401.91913"
+                    y="480.40038"
+                    width="164.09716"
+                    height="51.131723"
+                    id="rect23641" />
+                    <rect
+                    x="393.59536"
+                    y="478.02216"
+                    width="204.52689"
+                    height="51.131723"
+                    id="rect23577" />
+                    <inkscape:perspective
+                    sodipodi:type="inkscape:persp3d"
+                    inkscape:vp_x="0 : 148.5 : 1"
+                    inkscape:vp_y="0 : 1000 : 0"
+                    inkscape:vp_z="210 : 148.5 : 1"
+                    inkscape:persp3d-origin="105 : 99 : 1"
+                    id="perspective1018" />
+                    <linearGradient
+                    id="linearGradient30727"
+                    inkscape:swatch="solid">
+                    <stop
+                        style="stop-color:#363636;stop-opacity:1;"
+                        offset="0"
+                        id="stop30725" />
+                    </linearGradient>
+                </defs>
+                <g
+                    inkscape:label="Layer 1"
+                    inkscape:groupmode="layer"
+                    id="layer1">
+                    <rect
+                    style="display:inline;fill:#aeaeae;fill-opacity:1;stroke-width:0"
+                    id="rect26789"
+                    width="99.007736"
+                    height="41.866749"
+                    x="33.055286"
+                    y="46.845135"
+                    rx="0"
+                    ry="1.1659825"
+                    transform="matrix(0.9689008,0.24744948,2.014849e-4,0.99999998,0,0)" />
+                    <rect
+                    style="display:inline;fill:#979797;fill-opacity:1;stroke-width:0"
+                    id="rect27830"
+                    width="41.771809"
+                    height="41.781513"
+                    x="132.81378"
+                    y="112.69953"
+                    ry="1.1399977"
+                    rx="0"
+                    transform="matrix(0.96843571,-0.24926346,-0.01017251,0.99994826,0,0)" />
+                    <rect
+                    style="display:inline;fill:#cbcbcb;fill-opacity:1;stroke-width:0"
+                    id="rect26789-3"
+                    width="41.952015"
+                    height="98.517784"
+                    x="-94.919136"
+                    y="-226.46194"
+                    rx="0.18856169"
+                    ry="13.853096"
+                    transform="matrix(0.96909386,-0.24669231,-0.96875002,-0.24803909,0,0)"
+                    inkscape:transform-center-x="7.4430389"
+                    inkscape:transform-center-y="-3.8754508" />
+                    <path
+                    style="fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path1096"
+                    sodipodi:type="arc"
+                    sodipodi:cx="75.193855"
+                    sodipodi:cy="105.71186"
+                    sodipodi:rx="12.112817"
+                    sodipodi:ry="18.090572"
+                    sodipodi:start="0.041307675"
+                    sodipodi:end="0"
+                    sodipodi:open="true"
+                    sodipodi:arc-type="arc"
+                    d="M 87.296339,106.45893 A 12.112817,18.090572 0 0 1 74.818651,123.79375 12.112817,18.090572 0 0 1 63.083622,105.33825 12.112817,18.090572 0 0 1 75.318941,87.622253 12.112817,18.090572 0 0 1 87.306672,105.71186" />
+                    <path
+                    style="fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path4654"
+                    sodipodi:type="arc"
+                    sodipodi:cx="78.025421"
+                    sodipodi:cy="108.93671"
+                    sodipodi:rx="15.416314"
+                    sodipodi:ry="20.528866"
+                    sodipodi:start="0.16588164"
+                    sodipodi:end="3.3691338"
+                    sodipodi:arc-type="arc"
+                    d="M 93.230118,112.32647 A 15.416314,20.528866 0 0 1 83.125324,128.30973 15.416314,20.528866 0 0 1 67.738011,124.22626 15.416314,20.528866 0 0 1 63.006478,104.30575"
+                    sodipodi:open="true" />
+                    <rect
+                    style="fill:#cee4e4;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="rect4710"
+                    width="17.878191"
+                    height="16.034649"
+                    x="-129.39926"
+                    y="34.689758"
+                    ry="1.2482717"
+                    rx="0"
+                    transform="matrix(-0.94364175,-0.33096864,-0.94051748,0.33974531,0,0)"
+                    inkscape:transform-center-x="-1.0285102"
+                    inkscape:transform-center-y="5.3853349" />
+                    <ellipse
+                    style="fill:#ff4646;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path13910"
+                    cx="55.136917"
+                    cy="56.867321"
+                    rx="4.1686969"
+                    ry="1.3371292" />
+                    <ellipse
+                    style="fill:#ff4646;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path16824"
+                    cx="65.047401"
+                    cy="59.777538"
+                    rx="3.6967692"
+                    ry="1.4157839" />
+                    <ellipse
+                    style="fill:#ff4646;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path16826"
+                    cx="78.654663"
+                    cy="48.451271"
+                    rx="2.3596396"
+                    ry="0.94385594" />
+                    <ellipse
+                    style="fill:#ff4646;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path16828"
+                    cx="86.04818"
+                    cy="50.574947"
+                    rx="2.6742582"
+                    ry="1.1798199" />
+                    <ellipse
+                    style="display:inline;fill:#fbffd7;fill-opacity:1;stroke:#84d3eb;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    id="path16852"
+                    cx="74.643272"
+                    cy="107.67823"
+                    rx="8.2587395"
+                    ry="14.079185" />
+                    <rect
+                    style="fill:#cba61b;fill-opacity:1;stroke:#84d3eb;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    id="rect16920"
+                    width="97.549316"
+                    height="3.964009"
+                    x="35.591198"
+                    y="47.363937"
+                    ry="1.1059235"
+                    rx="1.168931"
+                    transform="matrix(0.96894775,0.24726557,-0.04352091,0.99905252,0,0)" />
+                    <rect
+                    style="fill:#ba9819;fill-opacity:1;stroke:#84d3eb;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    id="rect16974"
+                    width="40.370319"
+                    height="2.6170385"
+                    x="137.65138"
+                    y="116.55177"
+                    rx="1.1129274"
+                    ry="1.1058825"
+                    transform="matrix(0.9657983,-0.2592945,-0.03875353,0.9992488,0,0)" />
+                    <ellipse
+                    style="fill:#000000;fill-opacity:1;stroke:#84d3eb;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    id="path17030"
+                    cx="74.25"
+                    cy="107.44227"
+                    rx="2.6742585"
+                    ry="4.0900426" />
+                    <path
+                    style="fill:none;fill-opacity:1;stroke:#db2525;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+                    d="m 74.665175,115.46137 21.656419,26.02582"
+                    id="path21629"
+                    inkscape:transform-center-y="-0.22246898" />
+                    <text
+                    xml:space="preserve"
+                    transform="matrix(0.26458333,0,0,0.26458333,-9.7663685,11.423247)"
+                    id="text23639"
+                    style="font-size:18.6667px;line-height:2.7;white-space:pre;shape-inside:url(#rect23641);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    inkscape:label="Speed"><tspan
+                        x="401.91992"
+                        y="510.91812"
+                        id="tspan2250">Speed:</tspan></text>
+                    <path
+                    style="fill:none;fill-opacity:1;stroke:#fa0000;stroke-width:0.8;stroke-dasharray:none;stroke-opacity:1"
+                    d="M 102.37792,55.247987 93.751209,25.932888"
+                    id="path24692" />
+                    <text
+                    xml:space="preserve"
+                    transform="matrix(0.26458333,0,0,0.26458333,68.384371,-4.1459405)"
+                    id="text25534"
+                    style="font-size:18.6667px;line-height:52.9134px;text-align:end;white-space:pre;shape-inside:url(#rect25536);shape-padding:0;display:inline;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    x="-78.120087"
+                    y="0"
+                    inkscape:label="Mode"><tspan
+                        x="34.484375"
+                        y="108.47164"
+                        id="tspan2254"><tspan
+                style="text-align:start"
+                id="tspan2252">Mode</tspan>:</tspan></text>
+                    <path
+                    style="fill:none;fill-opacity:1;stroke:#f70000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+                    d="m 57.841935,81.201177 -23.136775,25.138993 0.22247,8.00889"
+                    id="path25607" />
+                    <text
+                    xml:space="preserve"
+                    transform="matrix(0.26458333,0,0,0.26458333,-3.3370347,-1.5572829)"
+                    id="text26102"
+                    style="font-size:18.6667px;line-height:41.5748px;text-align:start;white-space:pre;shape-inside:url(#rect26104);display:inline;fill:#000000;fill-opacity:1;stroke:#f70000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+                    inkscape:label="Battery level"><tspan
+                        x="61.380859"
+                        y="459.97227"
+                        id="tspan2256">Battery level:</tspan></text>
+                    <path
+                    style="fill:#000000;fill-opacity:1;stroke:#f70000;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+                    d="m 145.98305,94.700211 6.60699,-53.17055"
+                    id="path27092" />
+                    <text
+                    xml:space="preserve"
+                    transform="scale(0.26458333)"
+                    id="text27094"
+                    style="font-size:18.6667px;line-height:52.9134px;text-align:start;white-space:pre;shape-inside:url(#rect27096);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.64567;stroke-dasharray:none;stroke-opacity:1"
+                    inkscape:label="Route_ID"><tspan
+                        x="487.53516"
+                        y="136.41696"
+                        id="tspan2258">Route ID: </tspan></text>
+                    <ellipse
+                    style="fill:#69b482;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+                    id="path13910-3"
+                    cx="167.4079"
+                    cy="123.58151"
+                    rx="10.064125"
+                    ry="3.2281156" />
+                    <text
+                    xml:space="preserve"
+                    transform="matrix(0.27068572,0,0,0.26458333,-24.630625,2.4471587)"
+                    id="text1146"
+                    style="font-size:18.6667px;line-height:0px;white-space:pre;shape-inside:url(#rect1148);display:inline;fill:#69b482;fill-opacity:1;stroke-width:2.61568"
+                    inkscape:label="Current location"><tspan
+                        x="571.76367"
+                        y="489.63409"
+                        id="tspan2262"><tspan
+                        style="fill:#000000"
+                        id="tspan2260">Current location: </tspan></tspan></text>
+                    <rect
+                    style="fill:#999999;fill-opacity:1;stroke-width:0.883195"
+                    id="rect2092"
+                    width="14.571294"
+                    height="7.930687"
+                    x="-46.213585"
+                    y="139.41156"
+                    ry="1.087039"
+                    rx="0.80569535"
+                    transform="matrix(0.94054609,-0.3396661,0.94518161,0.32654514,0,0)"
+                    inkscape:label="Mode Light"
+                    inkscape:transform-center-x="6.7081082"
+                    inkscape:transform-center-y="1.8930689" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <script src="agvInfo.js"></script>
+</body>
+
+</html>
