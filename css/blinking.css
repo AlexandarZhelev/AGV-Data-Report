@@ -1,21 +1,3 @@
-.sensor.table{
-    display: flex;
-    padding-top: 50px;
-}
-
-.sensor_table_row{
-    padding-right: 60px;
-}
-
-button{
-    margin-left: 20px;
-}
-
-#agvMode, #time, #voltage, #Battery {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
 @-webkit-keyframes blinkerReady {
     from {
       fill: #9cff3f;

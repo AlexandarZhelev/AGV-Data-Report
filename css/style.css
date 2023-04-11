@@ -1,0 +1,22 @@
+@import url(./blinking.css);
+@import url(./button.css);
+@import url(./sensor_table_clases.css);
+
+body {
+    background-color: #ebf8fc;
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#agvMode, #time, #voltage, #Battery, #CurrentSpeed, #currentLocation {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+tspan {
+    font-family: 'Work Sans', sans-serif;
+}
