@@ -1,0 +1,12 @@
+.sensor.table{
+    display: flex;
+}
+
+.sensor_table_row{
+    padding-right: 60px;
+}
+
+.sensor_table_cell{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}

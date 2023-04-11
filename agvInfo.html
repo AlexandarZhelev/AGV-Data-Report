@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>
         AGV Data Report
     </title>
-
+    
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-
-
-
 <body>
     <div class="content">
         <h1>
             AGV Parameters Example
-            <button onclick="changeSVGTexts()">Get Values From The AGV Sensors</button>
+            
         </h1>
+        
     </hr>
 
     <div class="sensor table">
@@ -57,6 +56,11 @@
               <div class="sensor_table_cell sensor_input"><input id="blinkerCheckbox" type="checkbox"></input></div>
           </div>
     </div>
+
+    <button 
+        onclick="changeSVGTexts()">Get Values From The AGV Sensors
+    </button>
+
         <div>
             <svg
                 width="210mm"
